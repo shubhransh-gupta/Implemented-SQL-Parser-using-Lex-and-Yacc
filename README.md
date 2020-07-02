@@ -8,11 +8,17 @@ $ gcc lex.yy.c y.tab.c -o lexyacc
 
 $ ./lexyacc
 select * from table1 where name=manav
+
 Syntax Correct
+
 select name from table2 where name=manav and surname=sanghavi
+
 Syntax Correct
+
 select * where name=manav
+
 error: syntax error
+
 
 please dont run in any online terminal
 Use Linux for best results..
