@@ -1,0 +1,13 @@
+mnvsngv@M17xR4:~/lexyacc$ lex lex.l
+
+mnvsngv@M17xR4:~/lexyacc$ yacc -d yacc.y
+
+mnvsngv@M17xR4:~/lexyacc$ gcc lex.yy.c y.tab.c -o lexyacc
+
+mnvsngv@M17xR4:~/lexyacc$ ./lexyacc
+select * from table1 where name=manav
+Syntax Correct
+select name from table2 where name=manav and surname=sanghavi
+Syntax Correct
+select * where name=manav
+error: syntax error
